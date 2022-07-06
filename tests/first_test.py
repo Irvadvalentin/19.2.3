@@ -16,12 +16,21 @@ class TestCalc:
 # деление:
     def test_division_calculate_correctly(self):
         assert self.calc.division(self, 4, 2) == 2
+        
+    def test_division_calculate_failed(self):
+        assert self.calc.division(self, 4, 2) == 3
 
 # вычитание:
     def test_subtraction_calculate_correctly(self):
         assert self.calc.subtraction(self, 5, 3) == 2
+        
+    def test_subtraction_calculate_failed(self):
+        assert self.calc.subtraction(self, 5, 3) == 1
 
 # сложение:
     def test_adding_calculate_correctly(self):
         assert self.calc.adding(self, 2, 5) == 7
+        
+    def test_adding_calculate_failed(self):
+        assert self.calc.adding(self, 2, 5) == 10
 
